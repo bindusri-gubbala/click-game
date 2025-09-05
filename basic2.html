@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Click Game</title>
+    <style>
+      body { text-align:center; margin-top:50px; }
+      button { padding:20px; font-size:20px; }
+    </style>
+  </head>
+  <body>
+    
+    <h1>🎮Click game🎮</h1>
+    <H3>by BINDU🦋</H3><br><br>
+    <h2>click the button!</h2>
+    <P>Click the button and let the background suprise you..</P>
+    <button id="btn">Click me</button>
+    <script>
+      const btn = document.getElementById("btn");
+      btn.addEventListener("click", () => {
+        document.body.style.backgroundColor = 
+          "#" + Math.floor(Math.random()*16777215).toString(16);
+      });
+    </script>
+  </body>
+</html>
